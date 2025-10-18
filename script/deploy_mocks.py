@@ -8,6 +8,7 @@ STARTING_PRICE = int(2000e8)
 
 
 def deploy_feed() -> VyperContract:
+    # deploy the mock price feed
     mock_v3_aggregator = MockV3Aggregator.deploy(
         STARTING_DECIMALS, STARTING_PRICE
     )
