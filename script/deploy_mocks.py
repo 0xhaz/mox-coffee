@@ -1,5 +1,4 @@
 from src.mocks import mock_v3_aggregator
-from eth_utils import to_wei
 from moccasin.boa_tools import VyperContract
 
 
