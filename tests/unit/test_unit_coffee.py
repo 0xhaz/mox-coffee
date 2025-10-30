@@ -51,3 +51,8 @@ def test_owner_can_withdraw_multiple_funders(coffee_funded):
 
     assert boa.env.get_balance(coffee_funded.address) == 0
     assert boa.env.get_balance(coffee_funded.OWNER()) == starting_owner_balance + starting_fund_me_balance
+
+def test_get_rate(coffee):
+    eth_amount = SEND_VALUE
+    rate = coffee.get_eth_to_usd_rate(eth_amount)
+    assert rate > 0

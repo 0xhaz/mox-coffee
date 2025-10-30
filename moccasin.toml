@@ -9,7 +9,8 @@ is_zksync = false
 [networks.anvil]
 url = "http://127.0.0.1:8545"
 prompt_live = false
-save_to_db = false
+default_account_name = "localKey"
+save_to_db = true
 chain_id = 31337
 
 [networks.sepolia]
