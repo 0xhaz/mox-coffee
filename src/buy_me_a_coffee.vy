@@ -12,7 +12,7 @@ from src import get_price_module
 
 # Constants & Immutable Variables
 MINIMUM_USD: public(constant(uint256)) = as_wei_value(5, "ether")
-PRICE_FEED: public(immutable(AggregatorV3Interface)) # 0x694AA1769357215DE4FAC081bf1f309aDC325306 sepolia
+PRICE_FEED: public(immutable(AggregatorV3Interface)) # 0x694AA1769357215DE4FAC081bf1f309aDC325306 sepolia address
 OWNER: public(immutable(address))
 
 # Storage
